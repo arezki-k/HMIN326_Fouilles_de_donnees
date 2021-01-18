@@ -1,0 +1,42 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     movieComments-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-N0-stemmerweka.core.stemmers.IteratedLovinsStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.AlphabeticTokenizer
+Instances:    10000
+Attributes:   1002
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6306               63.06   %
+Incorrectly Classified Instances      3694               36.94   %
+Kappa statistic                          0.2612
+Mean absolute error                      0.3755
+Root mean squared error                  0.5857
+Relative absolute error                 75.0976 %
+Root relative squared error            117.1307 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,616    0,355    0,634      0,616    0,625      0,261    0,651     0,611     -1
+                 0,645    0,384    0,627      0,645    0,636      0,261    0,651     0,608     1
+Weighted Avg.    0,631    0,369    0,631      0,631    0,631      0,261    0,651     0,610     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3081 1919 |    a = -1
+ 1775 3225 |    b = 1
+
